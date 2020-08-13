@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Project 1</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <h1 style="font-size:20px">World Fitness</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fitnessNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="fitnessNavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item "><a class="nav-link" href="index.html"><i
+                                    class="fas fa-house-user fa-sm"></i>
+                                Home</a>
+                        </li>
+                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fas fa-sign fa-sm"></i>
+                                About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-th-list fa-sm"></i>Find Your
+                                Program</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-campground fa-sm"></i>
+                                Healthy Tips</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-utensils fa-sm"></i>
+                                Healthy Plate</a></li>
+                        <li class=" nav-item"><a class="nav-link" href="#"><i class="fas fa-dumbbell fa-sm"></i>
+                                Need a coach ?</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card text-center ">
+            <img src="img/aboutpage.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay d-flex flex-column">
+                <div class="mt-auto">
+                    <h1>Find the key to your healthy life</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Sign up for the lates news</p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="manButton"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Man</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="womanButon"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Woman</label>
+                    </div>
+                    <form class="form-inline">
+                        <div class="form-group mb-2">
+                            <input type="email" class="form-control" placeholder="Email" id="inputEmail">
+                        </div>
+                        <button type="submit" class="btn btn-dark mb-2">Sign up</button>
+                    </form>
+                </div>
+                <div class="col col-sm-5 text-center ml-auto">
+                    <p>Social</p>
+                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
+                            class="fab fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
+                            class="fab fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+    </footer>
+
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+</body>
+
+</html>
