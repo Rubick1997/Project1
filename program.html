@@ -8,14 +8,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Mulish&family=Red+Rose:wght@700&display=swap" rel="stylesheet">
+
     <title>Project 1</title>
 </head>
 
@@ -54,7 +56,7 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row row-content">
             <div class="col-md-9" style="padding:0">
                 <img class="img-fluid" style="width: 100%;" src="img/program.jpg"
@@ -63,12 +65,22 @@
             <div class="col-md-3 d-flex flex-fill bg-danger text-white">
                 <div class="align-self-center">
                     <h3>Trainings time</h3>
-                    <p> Find your own path in fitness, choose and get started, no matter where you are!</p>
+                    <p> Find your own path in fitness, choose and get started, no matter where you
+                        are!</p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="text-center container">
+        <h3>Just Choose</h3>
+        <div class="row">
+            <div id="carouselTwo" class="carousel slide w-100" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
 
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="site-footer">
         <div class="container">
@@ -111,8 +123,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"> </script>
-
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>
