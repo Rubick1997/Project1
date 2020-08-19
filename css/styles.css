@@ -32,7 +32,7 @@ p {
     margin-top: 20px;
 }
 
-.card:hover {
+#card1 .card:hover {
     -ms-transform: scale(1.01);
     /* IE 9 */
     -webkit-transform: scale(1.01);
