@@ -1,0 +1,68 @@
+$primary-color: #ffffff;
+$secondary-color: #d9d9db;
+$color-pale: #b2b5b9;
+$color-mid: #8c9397;
+$color-dark: #677275;
+
+$para-font: "Mulish", sans-serif;
+$header-font: "Red Rose", cursive;
+
+h1,
+h2,
+h3 {
+    font-family: $header-font;
+    font-size: 30px;
+}
+
+p {
+    font-family: $para-font;
+}
+
+.jumbotron {
+    padding: 5px;
+    background-image: linear-gradient(to top, $primary-color, $secondary-color, $color-pale, $color-mid, $color-dark);
+    color: black;
+    margin: 0;
+}
+
+#carousel1 {
+    .carousel {
+        .carousel-control-prev-icon {
+            background-image: url('data:image/svg+xml,<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left-circle" fill="%23fff" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path fill-rule="evenodd" d="M8.354 11.354a.5.5 0 0 0 0-.708L5.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z"/><path fill-rule="evenodd" d="M11.5 8a.5.5 0 0 0-.5-.5H6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5z"/></svg>');
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+}
+#carousel1 {
+    .carousel {
+        .carousel-control-next-icon {
+            /* change fill="currentColor" to %23fff to make it white  */
+            background-image: url('data:image/svg+xml,<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right-circle" fill="%23fff" xmlns="http://www.w3.org/2000/svg">  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/><path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/></svg>');
+            width: 7rem;
+            height: 7rem;
+        }
+    }
+}
+
+.site-footer {
+    background-image: linear-gradient(to bottom, $primary-color, $secondary-color, $color-pale, $color-mid, $color-dark);
+    margin-top: 20px;
+}
+
+#card1 {
+    .card:hover {
+        -ms-transform: scale(1.01);
+        /* IE 9 */
+        -webkit-transform: scale(1.01);
+        /* Safari 3-8 */
+        transform: scale(1.01);
+    }
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
