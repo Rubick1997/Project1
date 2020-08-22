@@ -114,7 +114,7 @@
           <h5 class="card-title">Contribute</h5>
           <p class="card-text">Contact us if you want to be a part of sharing the sport culture
           </p>
-          <a href="#" class="btn btn-dark">Contact</a>
+          <button type="button" class="btn btn-dark" id="contactButton">Contact</button>
         </div>
       </div>
       <div class="card" id="card1">
@@ -123,6 +123,74 @@
           <h5 class="card-title">Any questions or thoughts?</h5>
           <p class="card-text">Post to the forum, to share with other community members</p>
           <a href="#" class="btn btn-dark">Forum</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="contactModal" role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Contact</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <form>
+              <div class="form-group row">
+                <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                <div class="col-md-10">
+                  <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Last Name" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="areaCode" class="col-md-2 col-form-label">Contact Tel.</label>
+                <div class="col-5 col-md-3">
+                  <input type="tel" class="form-control" id="areaCode" name="areaCode" placeholder="Area code" />
+                </div>
+                <div class="col-7">
+                  <input type="tel" class="form-control" name="telNum" placeholder="Tel. number" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-md-2 col-form-label">Email</label>
+                <div class="col-md-10">
+                  <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col offset-md-2">
+                  May we contact you?
+                  <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" />
+                    <label for="contactYes" class="form-check-label">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" />
+                    <label for="contactNo" class="form-check-label">No</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="feedback" class="col-md-2 col-form-label">What can you bring to the World Class ?</label>
+                <div class="col-md-10">
+                  <textarea class="form-control" id="feedback" name="feedback" rows="8"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="offset-md-2 col-md-10">
+                  <button type="submit" class="btn btn-dark">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
@@ -160,12 +228,12 @@
 
 
   <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <!-- build:js js/main.js -->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- endbuild -->
+  <!-- build:js js/main.js -->
+  <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <!-- endbuild -->
 
 </body>
 
